@@ -6,22 +6,19 @@
 #define POO1_ROBOT_H
 
 
-#include <iostream>
-#include <vector>
-#include <string>
-
 #include "Almacen.h" // Incluye Instruccion
+#include "funciones.h"
 using namespace std;
 
 class Robot{
 private:
-    int numero;
-    int origen[2];
-    int coordActual[2];
+    entero numero;
+    entero origen[2];
+    entero coordActual[2];
     string estado; // en tránsito, destino, home
     Almacen* almacen;
 
-    int proximaInstruccion = 0;  // numero de siguiente instruccion a ejecutar
+    entero proximaInstruccion = 0;  // numero de siguiente instruccion a ejecutar
     vector<Instruccion> instrucciones;
 
     bool moverse(int dest1, int dest2); // devuelve true si llego al destino y false si hubo colision.
