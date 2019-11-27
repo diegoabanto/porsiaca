@@ -5,20 +5,22 @@
 #ifndef POO1_INSTRUCCION_H
 #define POO1_INSTRUCCION_H
 
+
 #include <iostream>
 #include <string>
 using namespace std;
 
 class Instruccion{
 public:
-    int numero;
+    entero numero;
     string operacion;
-    int destino[2];
+    entero destino[2];
     string producto;
-    int cantidad;
+    entero cantidad;
 
-    Instruccion(int _numero, string _operacion, int coord1_dest, int coord2_dest, string producto, int _cantidad);
+    Instruccion(entero _numero, string _operacion, entero coord1_dest, entero coord2_dest, string producto, entero _cantidad);
 };
+
 
 
 #endif //POO1_INSTRUCCION_H
