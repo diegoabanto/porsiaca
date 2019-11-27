@@ -32,12 +32,13 @@ public:
     int getFilas();
     int getColumnas();
 
-    void ingresarProducto(int coord1, int coord2, string producto, int cantidad);
-    void retirarProducto(int coord1, int coord2, int cantidad);
+    normal ingresarProducto(int coord1, int coord2, string producto, int cantidad);
+    normal retirarProducto(int coord1, int coord2, int cantidad);
 
-    void marcarRobot(int num_robot, int coord1, int coord2);
-    void desmarcarRobot(int coord1, int coord2);
+    normal marcarRobot(int num_robot, int coord1, int coord2);
+    normal desmarcarRobot(int coord1, int coord2);
 };
+
 
 
 #endif //POO1_ALMACEN_H
