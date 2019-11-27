@@ -1,6 +1,6 @@
 #include "Instruccion.h"
 
-Instruccion::Instruccion(int _numero, string _operacion, int coord1_dest, int coord2_dest, string _producto, int _cantidad){
+Instruccion::Instruccion(entero _numero, string _operacion, entero coord1_dest, entero coord2_dest, string _producto, entero _cantidad){
     numero = _numero;
     operacion = _operacion;
     destino[0] = coord1_dest;
