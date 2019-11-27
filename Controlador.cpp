@@ -1,6 +1,6 @@
 #include "Controlador.h"
-
-void Controlador::input_robots(){
+#include "funciones.h"
+normal Controlador::input_robots(){
     int n;
     cout << "Numero de robots: ";
     cin >> n;
@@ -19,7 +19,7 @@ void Controlador::input_robots(){
     }
 }
 
-void Controlador::input_instrucciones(){
+normal Controlador::input_instrucciones(){
     int n;
     cout << endl << "Numero de instrucciones: ";
     cin >> n;
@@ -48,7 +48,7 @@ void Controlador::input_instrucciones(){
     }
 }
 
-void Controlador::ejecutar_instrucciones(){
+normal Controlador::ejecutar_instrucciones(){
     bool instCompletadas;
     do{
         instCompletadas = true;
