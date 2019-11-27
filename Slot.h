@@ -3,11 +3,11 @@
 
 #include <iostream>
 #include <string>
-
+#include "funciones.h"
 class Slot{
 public:
     std::string producto;
-    int cantidad = 0;
+    entero cantidad = 0;
 };
 
 
