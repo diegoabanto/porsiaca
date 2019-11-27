@@ -1,5 +1,5 @@
 #include "Almacen.h"
-
+#include "funciones.h"
 // Constructor
 Almacen::Almacen(){
     // Iniciar con un almacen vacio
@@ -28,22 +28,22 @@ int Almacen::getColumnas(){
 }
 
 // Modificar slots
-void Almacen::ingresarProducto(int coord1, int coord2, string producto, int cantidad){
+normal Almacen::ingresarProducto(int coord1, int coord2, string producto, int cantidad){
     slots[coord1][coord2].producto = producto;
     slots[coord1][coord2].cantidad += cantidad;
 }
 
-void Almacen::retirarProducto(int coord1, int coord2, int cantidad){
+normal Almacen::retirarProducto(int coord1, int coord2, int cantidad){
     slots[coord1][coord2].cantidad -= cantidad;
     if (slots[coord1][coord2].cantidad==0) {slots[coord1][coord2].producto = "";}
 }
 
 
 // Estado de robots
-void Almacen::marcarRobot(int num_robot, int coord1, int coord2){
+normal Almacen::marcarRobot(int num_robot, int coord1, int coord2){
     posRobots[coord1][coord2] = num_robot;
 }
 
-void Almacen::desmarcarRobot(int coord1, int coord2){
+normal Almacen::desmarcarRobot(int coord1, int coord2){
     posRobots[coord1][coord2] = -1;
 }
