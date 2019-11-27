@@ -34,7 +34,7 @@ normal Controlador::input_instrucciones(){
         // Pedir datos
         cout << "Numero de robot: ";
         cin >> num_robot;
-        cout << "Operacion: ";
+        cout << "Operacion (ingreso o en transito): ";
         cin >> operacion;
         cout << "Destino (fila columna): ";
         cin >> destino_fila >> destino_col;
