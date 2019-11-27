@@ -5,6 +5,7 @@
 #include <cstdlib>
 using namespace std;
 typedef size_t range;
+typedef int entero;
 typedef ifstream entrada;
 typedef double decimal;
 typedef size_t positivo;
