@@ -8,3 +8,4 @@ Instruccion::Instruccion(entero _numero, string _operacion, entero coord1_dest, 
     producto = _producto;
     cantidad = _cantidad;
 }
+

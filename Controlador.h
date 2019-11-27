@@ -6,7 +6,7 @@
 #define POO1_CONTROLADOR_H
 
 
-#include <iostream>
+
 #include "Robot.h" // Incluye Almacen e Instruccion
 #include "funciones.h"
 using namespace std;
@@ -20,7 +20,5 @@ public:
     normal input_instrucciones();
     normal ejecutar_instrucciones();
 };
-
-
 
 #endif //POO1_CONTROLADOR_H

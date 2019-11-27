@@ -1,9 +1,9 @@
 #include "Almacen.h"
-#include "funciones.h"
+
 // Constructor
 Almacen::Almacen(){
     // Iniciar con un almacen vacio
-    for (int i=0; i<f; i++){
+    for(int i=0; i<f; i++){
         for (int j=0; j<c; j++){
             Slot slot;
             slots[i][j] = slot;
@@ -11,7 +11,7 @@ Almacen::Almacen(){
     }
 
     // Iniciar sin ningun robot
-    for (int i=0; i<f; i++){
+    for(int i=0; i<f; i++){
         for (int j=0; j<c; j++){
             posRobots[i][j] = -1;
         }

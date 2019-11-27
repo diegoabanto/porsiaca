@@ -1,7 +1,3 @@
-//
-// Created by Asus on 26/11/2019.
-//
-
 #ifndef POO1_ALMACEN_H
 #define POO1_ALMACEN_H
 
@@ -28,7 +24,7 @@ private:
 
 public:
     Almacen();
-    ~Almacen(){};
+    ~Almacen() = default;
 
     entero getFilas();
     entero getColumnas();
@@ -39,6 +35,7 @@ public:
     normal marcarRobot(int num_robot, int coord1, int coord2);
     normal desmarcarRobot(int coord1, int coord2);
 };
+
 
 
 #endif //POO1_ALMACEN_H

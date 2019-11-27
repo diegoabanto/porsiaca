@@ -6,8 +6,7 @@
 #define POO1_INSTRUCCION_H
 
 
-#include <iostream>
-#include <string>
+#include "funciones.h"
 using namespace std;
 
 class Instruccion{
@@ -20,6 +19,7 @@ public:
 
     Instruccion(entero _numero, string _operacion, entero coord1_dest, entero coord2_dest, string producto, entero _cantidad);
 };
+
 
 
 

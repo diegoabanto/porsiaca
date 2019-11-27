@@ -8,7 +8,6 @@
 
 #include "Almacen.h" // Incluye Instruccion
 #include "funciones.h"
-using namespace std;
 
 class Robot{
 private:
@@ -33,5 +32,4 @@ public:
 
     bool termino();  // devuelve true si termino todas sus instrucciones o si no hay instrucciones
 };
-
 #endif //POO1_ROBOT_H

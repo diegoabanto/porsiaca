@@ -1,5 +1,5 @@
 #include "Controlador.h"
-#include "funciones.h"
+
 normal Controlador::input_robots(){
     int n;
     cout << "Numero de robots: ";
@@ -34,7 +34,7 @@ normal Controlador::input_instrucciones(){
         // Pedir datos
         cout << "Numero de robot: ";
         cin >> num_robot;
-        cout << "Operacion (ingreso o en transito): ";
+        cout << "Operacion: ";
         cin >> operacion;
         cout << "Destino (fila columna): ";
         cin >> destino_fila >> destino_col;
