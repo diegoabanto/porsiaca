@@ -3,3 +3,4 @@
 //
 
 #include "Slot.h"
+#include "funciones.h"
