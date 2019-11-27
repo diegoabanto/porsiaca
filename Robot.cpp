@@ -1,6 +1,6 @@
 #include "Robot.h"
 #include "funciones.h"
-Robot::Robot(int _numero, int _origen1, int _origen2, Almacen* _almacen){
+Robot::Robot(entero _numero, entero _origen1, entero _origen2, Almacen* _almacen){
     numero = _numero;
     origen[0] = _origen1;
     origen[1] = _origen2;
@@ -11,7 +11,7 @@ Robot::Robot(int _numero, int _origen1, int _origen2, Almacen* _almacen){
     almacen->marcarRobot(_numero, _origen1, _origen2);
 }
 
-void Robot::agregarInstruccion(Instruccion instruccion){
+normal Robot::agregarInstruccion(Instruccion instruccion){
     instrucciones.push_back(instruccion);
 }
 
